@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(225, 225, 225, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
