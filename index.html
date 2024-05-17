@@ -8,52 +8,98 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="vh-100 overflow-hidden">
+<body>
+  <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand fs-4" href="#">Gallery Project</a>
-          <!-- Toggle Button -->
-          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- SideBar -->
-          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <!-- SideBar Header -->
-            <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gallery Project</h5>
-              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <!-- SideBar Body -->
-            <div class="offcanvas-body d-flex">
-              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                <li class="nav-item mx-2">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#southKorea">South Korea</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#thailand">Thailand</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#singapore">Singapore</a>
-                </li>
-
-                </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fs-4" href="#">Gallery Project</a>
+        <!-- Toggle Button -->
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- SideBar -->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <!-- SideBar Header -->
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Gallery Project</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <!-- SideBar Body -->
+          <div class="offcanvas-body d-flex">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="#">Main</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#southKorea">South Korea</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#thailand">Thailand</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#singapore">Singapore</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </header>
+    
+  <main class="w-100 d-flex flex-column align-items-center text-white fs-1">
+    <!-- Main -->
+    <div>
+      <div class="p-2">
+        <h1>About Gallery Project</h1>
+      </div>
+      <div class="p-2">
+        <ul class="grid">
+          <li>By Yumin Park</li>
+          <li><a href="https://github.com/YuminPark78">
+            <img src="images/githubIcon.png" alt="github icon" class="icon">
+          </a></li>
+          <li><a href="https://www.linkedin.com/in/yumin-park-185b48299/">
+            <img src="images/linkedInIcon.png" alt="linkedin icon" class="icon">
+          </a></li>
+        </ul>
+      </div>
+      <div class="p-2">Flex item 3</div>
+    </div>
 
-      <main>
-        <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1">
-            <h1 style="font-size: 1.5em">Yumin Park</h1>
-        </section>
-      </main>
+    <!-- South Korea-->
+    <div id="southKorea">
+      <div class="p-2">
+        <h1>South Korea Gallery</h1>
+      </div>
+      <div class="p-2">
+        Explanation
+      </div>
+      <div class="p-2">Carousel</div>
+    </div>
+
+    <!-- Thailand -->
+    <div id="thailand">
+      <div class="p-2">
+        <h1>Thailand Gallery</h1>
+      </div>
+      <div class="p-2">
+        Explanation
+      </div>
+      <div class="p-2">Carousel</div>
+    </div>
+
+    <!-- Singapore -->
+    <div id="singapore">
+      <div class="p-2">
+        <h1>Singapore Gallery</h1>
+      </div>
+      <div class="p-2">
+        Explanation
+      </div>
+      <div class="p-2">Carousel</div>
+    </div>
+  </main>
 </body>
 </html>
