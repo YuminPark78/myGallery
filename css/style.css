@@ -40,14 +40,17 @@ main>div {
 }
 
 #krFlagContainer {
-    width: 450px;
-    height: 300px;
-    transition: all 0.1s;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
 }
 #krOverlay {
     position: absolute;
-    width: 450px;
-    height: 300px;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
     background: linear-gradient(105deg, transparent 40%, rgba(165, 25, 49, 0.8) 45%, rgba(45, 42, 74, 0.8) 50%, transparent 54%);
     filter: brightness(1.1) opacity(0.8);
     mix-blend-mode: color-dodge;
@@ -55,20 +58,25 @@ main>div {
     background-position: 100%;
 }
 #krFlag {
-    width: 450px;
-    height: 300px;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1200px-Flag_of_South_Korea.svg.png);
     background-size: cover;
 }
 #thFlagContainer {
-    width: 450px;
-    height: 300px;
-    transition: all 0.1s;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
 }
 #thOverlay {
     position: absolute;
-    width: 450px;
-    height: 300px;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
     background: linear-gradient(105deg, transparent 40%, rgba(165, 25, 49, 0.8) 45%, rgba(45, 42, 74, 0.8) 50%, transparent 54%);
     filter: brightness(1.1) opacity(0.8);
     mix-blend-mode: color-dodge;
@@ -76,20 +84,25 @@ main>div {
     background-position: 100%;
 }
 #thFlag {
-    width: 450px;
-    height: 300px;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg);
     background-size: cover;
 }
 #sgFlagContainer {
-    width: 450px;
-    height: 300px;
-    transition: all 0.1s;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
 }
 #sgOverlay {
     position: absolute;
-    width: 450px;
-    height: 300px;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
     background: linear-gradient(105deg, transparent 40%, rgba(238,37,54, 0.8) 45%, rgba(45, 42, 74, 0.8) 50%, transparent 54%);
     filter: brightness(1.1) opacity(0.8);
     mix-blend-mode: color-dodge;
@@ -97,8 +110,10 @@ main>div {
     background-position: 100%;
 }
 #sgFlag {
-    width: 450px;
-    height: 300px;
+    width: 21vw;
+    height: 14vw;
+    min-width: 300px;
+    min-height: 200px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/1200px-Flag_of_Singapore.svg.png);
     background-size: cover;
 }
