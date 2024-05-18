@@ -1,11 +1,11 @@
-<div class="container">
-    <div class="overlay"></div>
-    <div class="flag"></div>
+<div class="flagContainer">
+    <div id="thOverlay"></div>
+    <div id="thFlag"></div>
 </div>
 
 <script>
-    var container = document.querySelector('.container')
-    var overlay = document.querySelector('.overlay')
+    var container = document.querySelector('.flagContainer')
+    var overlay = document.querySelector('#thOverlay')
     container.addEventListener('mousemove', function(e){
         var x = e.offsetX
         var y = e.offsetY
@@ -21,12 +21,12 @@
 </script>
 
 <style>
-    .container {
+    .flagContainer {
         width: 450px;
         height: 300px;
         /* transition: all 0.1s; */
     }
-    .overlay {
+    #thOverlay {
         position: absolute;
         width: 450px;
         height: 300px;
@@ -40,7 +40,7 @@
         background-size: 150% 150%;
         background-position: 100%;
     }
-    .flag {
+    #thFlag {
         width: 450px;
         height: 300px;
         background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg);
