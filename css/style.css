@@ -126,10 +126,24 @@ main>div {
     left: 0;
     right: 0;
 }
+.gridBody {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10%;
+}
+
+.flag-horizontal h2{
+    padding-top: 10%;
+    font-size: 1.8em;
+}
 
 @media(max-width: 991px){
     .sidebar{
         background-color: rgba(225, 225, 225, 0.15);
         backdrop-filter: blur(10px);
+    }
+
+    .gridBody {
+        display: unset;
     }
 }
