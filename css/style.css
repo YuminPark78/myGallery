@@ -6,6 +6,14 @@ body {
     background-color: black;
 }
 
+#bg-layer {
+    background-image: url('/images/polaroid.png');
+    background-position: bottom center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 60vh;
+}
+
 main h1 {
     font-size: 1.3em;
     font-family:Arial, Helvetica, sans-serif;
@@ -36,15 +44,15 @@ main>div {
 #krFlagContainer {
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
 }
 #krOverlay {
     position: absolute;
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
     background: linear-gradient(105deg, transparent 40%, rgba(165, 25, 49, 0.8) 45%, rgba(45, 42, 74, 0.8) 50%, transparent 54%);
     filter: brightness(1.1) opacity(0.8);
     mix-blend-mode: color-dodge;
@@ -54,23 +62,23 @@ main>div {
 #krFlag {
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/1200px-Flag_of_South_Korea.svg.png);
     background-size: cover;
 }
 #thFlagContainer {
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
 }
 #thOverlay {
     position: absolute;
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
     background: linear-gradient(105deg, transparent 40%, rgba(165, 25, 49, 0.8) 45%, rgba(45, 42, 74, 0.8) 50%, transparent 54%);
     filter: brightness(1.1) opacity(0.8);
     mix-blend-mode: color-dodge;
@@ -80,23 +88,23 @@ main>div {
 #thFlag {
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a9/Flag_of_Thailand.svg);
     background-size: cover;
 }
 #sgFlagContainer {
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
 }
 #sgOverlay {
     position: absolute;
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
     background: linear-gradient(105deg, transparent 40%, rgba(238,37,54, 0.8) 45%, rgba(45, 42, 74, 0.8) 50%, transparent 54%);
     filter: brightness(1.1) opacity(0.8);
     mix-blend-mode: color-dodge;
@@ -106,8 +114,8 @@ main>div {
 #sgFlag {
     width: 21vw;
     height: 14vw;
-    min-width: 300px;
-    min-height: 200px;
+    min-width: 210px;
+    min-height: 140px;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/1200px-Flag_of_Singapore.svg.png);
     background-size: cover;
 }
@@ -134,7 +142,7 @@ main>div {
 
 .flag-horizontal h2{
     padding-top: 10%;
-    font-size: 1.8em;
+    font-size: 0.8em;
 }
 
 @media(max-width: 991px){
@@ -145,5 +153,11 @@ main>div {
 
     .gridBody {
         display: unset;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #777;
     }
 }

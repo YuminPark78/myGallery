@@ -1,7 +1,9 @@
 
 function animateKrFlag() {
     var width = window.innerWidth
-    if (width>991) {
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) == true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches==true;
+
+    if (width>991 && !isReduced) {
         var container = document.querySelector('#krFlagContainer')
         var overlay = document.querySelector('#krOverlay')
         container.addEventListener('mousemove', function(e){
@@ -21,7 +23,9 @@ function animateKrFlag() {
 
 function animateThFlag() {
     var width = window.innerWidth
-    if (width>991) {
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) == true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches==true;
+
+    if (width>991 && !isReduced) {
         var container = document.querySelector('#thFlagContainer')
         var overlay = document.querySelector('#thOverlay')
         container.addEventListener('mousemove', function(e){
@@ -41,7 +45,9 @@ function animateThFlag() {
 
 function animateSgFlag() {
     var width = window.innerWidth
-    if (width>991) {
+    const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) == true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches==true;
+
+    if (width>991 && !isReduced) {
         var container = document.querySelector('#sgFlagContainer')
         var overlay = document.querySelector('#sgOverlay')
         container.addEventListener('mousemove', function(e){
@@ -57,4 +63,13 @@ function animateSgFlag() {
             container.style = 'transform : perspective(350px) rotateY(0deg) rotateX(0deg)'
         })
     }
+}
+
+function backgoundTransition() {
+  var scrolltotop = document.scrollingElement.scrollTop;
+  var target = document.getElementById("bg-layer");
+  var xvalue = "center";
+  var factor = 0.9;
+  var yvalue = scrolltotop * factor;
+  target.style.backgroundPosition = xvalue + " " + yvalue + "px";
 }
