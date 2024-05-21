@@ -121,8 +121,8 @@ main>div {
 }
 
 .carousel-item {
-    height: 25rem;
-    width: 20rem;
+    height: 37rem;
+    width: 30rem;
     background: #777;
     position: relative;
     background-position: center;
@@ -139,10 +139,17 @@ main>div {
     grid-template-columns: 50% 50%;
     column-gap: 10%;
 }
-
-.flag-horizontal h2{
-    padding-top: 10%;
+.flag-horizontal h2 {
+    padding-top: 5%;
     font-size: 0.8em;
+}
+
+.flag-horizontal h3{
+    padding-top: 5%;
+    width: 21vw;
+    font-weight:normal;
+    font-size: 0.6em;
+    text-align: justify;
 }
 
 @media(max-width: 991px){
@@ -153,6 +160,19 @@ main>div {
 
     .gridBody {
         display: unset;
+    }
+    
+    .flag-horizontal {
+        flex-direction:row;
+    }
+
+    .flag-horizontal h3{
+        display: none;
+    }
+
+    .carousel-item {
+        height: 25rem;
+        width: 20rem;
     }
 }
 
