@@ -7,7 +7,7 @@ body {
 }
 
 #bg-layer {
-    background-image: url('/images/polaroid.png');
+    background-image: url('../images/polaroid.png');
     background-position: bottom center;
     background-attachment: scroll;
     background-size: cover;
